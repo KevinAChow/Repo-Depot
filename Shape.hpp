@@ -9,4 +9,4 @@ public:
   virtual int getVertices()=0;
   virtual float getArea()=0;
 
-}
+};

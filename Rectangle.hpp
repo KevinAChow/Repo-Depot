@@ -2,6 +2,6 @@
 
 class Rectangle: public Shape {
 public:
-  int getArea();
+  float getArea();
   int getVertices();
-}
+};
