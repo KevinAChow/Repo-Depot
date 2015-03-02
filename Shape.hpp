@@ -1,8 +1,13 @@
-
+enum Colour{RED,
+			GREEN,
+			BLUE,
+			YELLOW,
+			PURPLE,
+			CYAN};
 
 class Shape {
 
-  std::string colour;
+  Colour colour;
   std::string favourite_food;
 
 public:
