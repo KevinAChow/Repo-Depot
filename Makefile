@@ -1,13 +1,15 @@
 CC=g++
 PROJECT=application
+SOURCES=main.cpp Rectangle.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
 
 all: $(PROJECT)
 
-$(PROJECT): main.o
-	$(CC) main.o -o $(PROJECT)
+$(PROJECT): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(PROJECT)
 
-main.o: main.cpp
-	$(CC) -c main.cpp
+.cpp.o:
+	$(CC) -c $< -o $@
 
 clean:
 	rm *.o $(PROJECT)

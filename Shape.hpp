@@ -1,3 +1,5 @@
+#include <string>
+
 enum ShapeColour{RED,
 			GREEN,
 			BLUE,
