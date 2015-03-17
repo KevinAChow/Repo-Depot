@@ -1,12 +1,13 @@
 CC=g++
+PROJECT=application
 
-all: application
+all: $(PROJECT)
 
-application: main.o
-	$(CC) main.o -o application
+$(PROJECT): main.o
+	$(CC) main.o -o $(PROJECT)
 
 main.o: main.cpp
 	$(CC) -c main.cpp
 
 clean:
-	rm *.o application
+	rm *.o $(PROJECT)
