@@ -1,12 +1,12 @@
-
+CC=g++
 
 all: application
 
 application: main.o
-	g++ main.o -o application
+	$(CC) main.o -o application
 
 main.o: main.cpp
-	g++ -c main.cpp
+	$(CC) -c main.cpp
 
 clean:
 	rm *.o application
