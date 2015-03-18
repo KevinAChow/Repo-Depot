@@ -10,5 +10,6 @@ int main(void)
 	{
 	  std::cout << i << std::endl;
 	}
+  std::cout << "this did some stuff" << std::endl;
   return 0;
 }
